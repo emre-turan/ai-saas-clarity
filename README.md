@@ -37,4 +37,4 @@ This project has been a great learning experience. It has provided an opportunit
 
 ## Demo
 
-You can view the demo of the application [here](https://ai-saas.vercel.app/).
+You can view the demo of the application [here](https://ai-saas-clarity.vercel.app/).
