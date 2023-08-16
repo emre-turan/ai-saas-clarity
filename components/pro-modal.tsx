@@ -46,7 +46,7 @@ export const ProModal = () => {
               Upgrade to Clarity
               <Badge variant="premium" className="uppercase text-sm py-1">
                 pro
-              </Badge> 
+              </Badge>
             </div>
           </DialogTitle>
           <DialogDescription className="text-center pt-2 space-y-2 text-zinc-900 font-medium">
@@ -61,7 +61,7 @@ export const ProModal = () => {
                   </div>
                   <div className="font-semibold text-sm">{tool.label}</div>
                 </div>
-                <Check className="text-primary w-5 h-5" />
+                <Check className="w-5 h-5 text-red-500" />
               </Card>
             ))}
           </DialogDescription>

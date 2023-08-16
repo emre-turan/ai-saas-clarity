@@ -33,15 +33,18 @@ const testimonials = [
 
 export const LandingContent = () => {
   return (
-    <div className="px-10 pb-20">
-      <h2 className="text-center text-4xl text-white font-extrabold mb-10">
+    <div className="px-10 py-32">
+      <h2 className="text-center text-4xl text-white font-extrabold mb-4">
         Testimonials
       </h2>
+      <p className="font-light text-gray-500 mb-8 lg:mb-12 sm:text-xl dark:text-gray-400 text-center">
+        Discover that there is no limit to what you can do with Clarity
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {testimonials.map((item) => (
           <Card
             key={item.description}
-            className="bg-[#192339] border-none text-white"
+            className="bg-[#192339] border-none text-white hover:bg-[#192339]/80"
           >
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
@@ -50,7 +53,7 @@ export const LandingContent = () => {
                   <p className="text-zinc-400 text-sm">{item.title}</p>
                 </div>
               </CardTitle>
-              <CardContent className="pt-4 px-0">
+              <CardContent className="pt-4 px-0 font-light">
                 {item.description}
               </CardContent>
             </CardHeader>
