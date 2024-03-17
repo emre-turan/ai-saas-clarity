@@ -1,6 +1,10 @@
-"use client";
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const testimonials = [
   {
@@ -37,7 +41,7 @@ export const LandingContent = () => {
       <h2 className="text-center text-4xl text-white font-extrabold mb-4">
         Testimonials
       </h2>
-      <p className="font-light text-gray-500 mb-8 lg:mb-12 sm:text-xl dark:text-gray-400 text-center">
+      <p className="font-semibold text-gray-500 mb-8 lg:mb-12 sm:text-xl dark:text-gray-400 text-center">
         Discover that there is no limit to what you can do with Clarity
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -48,15 +52,11 @@ export const LandingContent = () => {
           >
             <CardHeader>
               <CardTitle className="flex items-center gap-x-2">
-                <div>
-                  <p className="text-lg">{item.name}</p>
-                  <p className="text-zinc-400 text-sm">{item.title}</p>
-                </div>
+                {item.name}
               </CardTitle>
-              <CardContent className="pt-4 px-0 font-light">
-                {item.description}
-              </CardContent>
+              <CardDescription >{item.title}</CardDescription>
             </CardHeader>
+            <CardContent>{item.description}</CardContent>
           </Card>
         ))}
       </div>
